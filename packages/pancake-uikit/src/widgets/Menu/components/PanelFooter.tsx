@@ -9,7 +9,7 @@ import ThemeSwitcher from "./ThemeSwitcher";
 import SocialLinks from "./SocialLinks";
 import LangSelector from "./LangSelector";
 
-interface Props extends PanelProps, PushedProps {}
+interface Props extends PanelProps, PushedProps { }
 
 const Container = styled.div`
   flex: none;
@@ -40,6 +40,7 @@ const PanelFooter: React.FC<Props> = ({
   toggleTheme,
   isDark,
   cakePriceUsd,
+  cake2PriceUsd,
   currentLang,
   langs,
   setLang,
@@ -59,6 +60,9 @@ const PanelFooter: React.FC<Props> = ({
       <SocialEntry>
         <CakePrice cakePriceUsd={cakePriceUsd} />
         <SocialLinks />
+      </SocialEntry>
+      <SocialEntry>
+        <CakePrice cakePriceUsd={cake2PriceUsd} />
       </SocialEntry>
       <SettingsEntry>
         <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
