@@ -8,6 +8,7 @@ import CakePrice from "./CakePrice";
 import ThemeSwitcher from "./ThemeSwitcher";
 import SocialLinks from "./SocialLinks";
 import LangSelector from "./LangSelector";
+import CakePrice2 from "./CakePrice2";
 
 interface Props extends PanelProps, PushedProps { }
 
@@ -59,15 +60,17 @@ const PanelFooter: React.FC<Props> = ({
     <Container>
       <SocialEntry>
         <CakePrice cakePriceUsd={cakePriceUsd} />
-        <SocialLinks />
       </SocialEntry>
       <SocialEntry>
-        <CakePrice cakePriceUsd={cake2PriceUsd} />
+        <CakePrice2 cakePriceUsd={cake2PriceUsd} />
       </SocialEntry>
-      <SettingsEntry>
+      <SocialEntry>
+        <SocialLinks />
+      </SocialEntry>
+      {/* <SettingsEntry>
         <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
         <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
-      </SettingsEntry>
+      </SettingsEntry> */}
     </Container>
   );
 };

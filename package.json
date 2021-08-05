@@ -1,8 +1,7 @@
 {
-  "name": "pancake-toolkit",
+  "name": "@1stcraft/1stcraft-toolkit",
   "version": "1.0.0",
   "description": "Pancake frontend packages",
-  "private": true,
   "workspaces": [
     "packages/*"
   ],
@@ -22,12 +21,6 @@
     "format:check": "lerna run format:check",
     "storybook:build": "lerna run storybook:build",
     "release": "yarn build && yarn lerna publish"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn format:check",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",

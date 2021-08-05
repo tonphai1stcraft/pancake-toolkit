@@ -40,6 +40,7 @@ const useProps = () => {
     setLang: noop,
     currentLang: "EN",
     cakePriceUsd: 0.023158668932877668,
+    cake2PriceUsd: 0.1234,
     links,
     profile: null,
   });
@@ -56,6 +57,7 @@ const useProps = () => {
         setLang: noop,
         currentLang: "EN",
         cakePriceUsd: 0.023158668932877668,
+        cake2PriceUsd: 0.1234,
         links,
         profile: null,
       });
@@ -150,6 +152,7 @@ export const WithSubmenuSelected: React.FC = () => {
         setLang={noop}
         currentLang="EN"
         cakePriceUsd={0.23158668932877668}
+        cake2PriceUsd={1.212344}
         links={links}
       >
         <div>
